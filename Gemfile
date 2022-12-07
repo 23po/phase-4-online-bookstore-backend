@@ -21,7 +21,7 @@ gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 
 
 #rake required by render deploy
-gem 'rake', '~> 11.2', '>= 11.2.2'
+gem 'rake', '~> 12.3.2'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
