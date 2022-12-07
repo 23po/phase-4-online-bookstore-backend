@@ -19,7 +19,7 @@ gem 'active_model_serializers'
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 
-gem 'sprockets-rails', '~> 3.0', '>= 3.0.4'
+
 
 
 #rake required by render deploy
