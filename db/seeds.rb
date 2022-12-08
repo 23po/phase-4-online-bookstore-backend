@@ -329,6 +329,6 @@ book1 = Book.create(
     
   )
      user1 = User.create(username:"Murithi", password:"wewe")
-     user2 =  User.create(username: "calvin" password: "kichwa")
+     user2 =  User.create(username: "calvin", password: "kichwa")
 
  
