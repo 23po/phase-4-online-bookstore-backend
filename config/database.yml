@@ -15,15 +15,20 @@
 #     adapter: postgresql
 #   encoding: unicode
 #  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
- 
 
 development:
-  # <<: *default
- adapter: sqlite3
- timeout: 5000
- pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
- database: db/development.sqlite3
-  #  database: mysite_development
+  adapter: sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  database: db/development.sqlite3
+
+# development:
+# # <<: *default
+#  adapter: sqlite3
+#  timeout: 5000
+#  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#  database: db/development.sqlite3
+#   #  database: mysite_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -37,14 +42,10 @@ development:
 test:
   # <<: *default
   database: mysite_test
-
- production:
+production:
   #  <<: *default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
    # database: db/production.sqlite3
   url: <%= ENV['DATABASE_URL'] %>
-
-
- 
