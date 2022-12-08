@@ -43,9 +43,9 @@ test:
   # <<: *default
   database: mysite_test
 production:
-  database: mysite_production
-  username: mysite
-  password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
+  # database: mysite_production
+  # username: mysite
+  # password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
   #  <<: *default
   adapter: postgresql
   encoding: unicode
